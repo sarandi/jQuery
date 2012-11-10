@@ -1,0 +1,1 @@
+jQuery.fn.PLUGINNAME = function() {	return this.each(function() {		// code 	});}
