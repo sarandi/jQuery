@@ -1,0 +1,35 @@
+(function($){
+	$.fn.tagger = function(){
+
+		//
+		var defaults = {
+		
+		};
+		
+		// This is where you populate the list of remote elements that you want to scrape
+		var scrapelist = {
+			'image' : '#artist_image',
+			'sponsors' : '.event_sponsor',
+			'name' : '.artist_name',
+			'guests' : '.special_guests',
+			'' : '',
+			'' : '',
+			'headline' : '.summary_text',
+			'' : '',
+			'' : '',
+			'' : '',
+			'prices' : '.tickets_price',
+		};
+
+		var regex = {
+			'price': /([0123456789$.]*)g/,
+			'date': //,
+			'venue': //
+		};
+
+		return this.each(function(){
+		
+		});
+	
+	};
+})(jQuery);
