@@ -4,17 +4,15 @@
     	sizedefault: "30px",
     	inc: 20,
     	cr: "\r\n"
-		};
-
-		var temp = [
+		},
+		temp = [
    		"<ul class=\"textsizer clearfix round\">",
 			"<li class=\"minus\">A</li>",
       "<li class=\"default\">A</li>",
     	"<li class=\"plus\">A</li>",
    		"</ul>"
-		];
-		
-		var newsize = function(operator) {
+		],
+		newsize = function(operator) {
 			var start = parseInt($("p").css("font-size").replace(/px/, ""),10);
 			console.log(start);
 			return operator==="plus" ? start+options.inc : start-options.inc;
